@@ -1,0 +1,58 @@
+@import '../../utils/variables.scss';
+
+.content {
+  @media (min-width: $bp-lg) {
+    display: flex;
+  }
+
+  &Checkout,
+  &Summary {
+    background-color: $white;
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  &Checkout {
+    flex-grow: 2;
+  }
+
+  &Summary {
+    flex-grow: 1;
+  }
+}
+
+.list {
+  margin: 10px 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+
+  &Total {
+    font-weight: 500;
+    color: $primary;
+  }
+}
+
+.inputField {
+  display: inline-block;
+  padding: 10px;
+  border: solid 1px $gray;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.fieldGroup {
+  margin: 0 -10px;
+}
+
+.fieldGroup > .inputField {
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+
+.placeOrder {
+  margin-top: 30px;
+}

@@ -1,0 +1,115 @@
+@import '../../utils/variables.scss';
+
+.noItems {
+  text-align: center;
+  padding: 30px;
+  background-color: $white;
+}
+
+.addItems {
+  margin-top: 30px;
+}
+
+.list {
+  margin: 30px 0;
+
+  &,
+  tbody,
+  tr,
+  td {
+    display: block;
+    text-align: center;
+  }
+
+  &,
+  tbody,
+  tr {
+    width: 100%;
+  }
+
+  tr {
+    padding: 20px 0;
+  }
+
+  @media (min-width: $bp-md) {
+    display: table;
+    width: 100%;
+
+    tbody,
+    tr,
+    td {
+      text-align: left;
+    }
+
+    tbody {
+      display: table-row-group;
+    }
+
+    tr {
+      display: table-row;
+    }
+
+    td {
+      display: table-cell;
+    }
+  }
+}
+
+.item {
+  background-color: $white;
+  border-top: solid 1px $gray-light;
+
+  &Image,
+  &Name,
+  &Counter,
+  &Total {
+    vertical-align: middle;
+    padding: 20px;
+  }
+
+  &Image {
+    @media (min-width: $bp-md) {
+      width: 200px;
+    }
+  }
+
+  &Name {
+    padding: 0 15px;
+    font-size: 1.2em;
+  }
+
+  &Counter {
+    @media (min-width: $bp-md) {
+      width: 200px;
+    }
+  }
+
+  &Total {
+    font-weight: 500;
+    text-align: right;
+
+    @media (min-width: $bp-md) {
+      width: 120px;
+    }
+  }
+}
+
+.remove {
+  font-size: 0.8em;
+}
+
+.grandTotal {
+  margin-top: 20px;
+  font-size: 1.8em;
+  text-align: right;
+}
+
+.checkout {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.error {
+  margin-top: 10px;
+  color: $red;
+}

@@ -1,0 +1,22 @@
+@import '../../utils/variables.scss';
+
+.root {
+  background-color: $white;
+  box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13);
+}
+
+.content {
+  padding: 15px;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 10px 0 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

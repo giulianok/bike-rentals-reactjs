@@ -1,0 +1,23 @@
+@import './utils/variables.scss';
+
+html,
+body {
+  font-family: Roboto, -apple-system, Helvetica, Arial, sans-serif;
+  color: $black;
+  background-color: $gray-light;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+button,
+input {
+  font-family: Roboto, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+strong {
+  font-weight: 500;
+}

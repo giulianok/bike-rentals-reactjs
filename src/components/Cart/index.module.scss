@@ -1,0 +1,21 @@
+@import '../../utils/variables.scss';
+
+.icon {
+  display: block;
+}
+
+.counter {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border-radius: 20px;
+  color: $white;
+  background-color: $red;
+  font-size: 0.8em;
+}
