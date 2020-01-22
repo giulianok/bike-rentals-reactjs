@@ -38,7 +38,9 @@ const Product = ({ product, canAdd }) => {
             </Button>
           </div>
         ) : (
-          'Cannot add'
+          <div className={styles.errorRequires}>
+            This product requires a Bike in your cart.
+          </div>
         )}
       </div>
     </div>

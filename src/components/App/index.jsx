@@ -6,6 +6,7 @@ import Header from 'components/Header';
 import Home from 'pages/Home';
 import CartSummary from 'pages/CartSummary';
 import Checkout from 'pages/Checkout';
+import CartAlert from 'components/CartAlert';
 
 import styles from './index.module.scss';
 
@@ -20,6 +21,7 @@ const App = () => (
           <Checkout path="/checkout" />
         </Router>
       </div>
+      <CartAlert />
     </CartStoreProvider>
   </>
 );
